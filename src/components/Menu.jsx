@@ -1,11 +1,20 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Menu(props) {
+
+  // const [menuItem, setMenuItem] = useState("Portfolio")
+
+  // function handleMenuClick(event) {
+  //   setMenuItem(event.target.name);
+  //   console.log(menuItem);
+  // }
+
   return (
     <div className={`menu ${props.visibility}`}>
-        <a href="/">Portfolio</a>
-        <a href="/">Insights</a>
-        <a href="/">Contact</a>
+        <Link to="/">Portfolio</Link>
+        <Link to="/insights">Insights</Link>
+        <Link to="/contact">Contact</Link>
     </div>
   )
 }

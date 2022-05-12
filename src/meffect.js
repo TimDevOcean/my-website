@@ -568,3 +568,5 @@ $(window)
             window.innerWidth > 1023 &&
             (clearInterval(timeout2), clearInterval(timeout3), clearTimeout(timeoutload2), clearTimeout(timeoutId2), (count2 = 0), (count3 = 0), (config.VELOCITY_DISSIPATION = 0), (config.SPLAT_RADIUS = 2));
     });
+
+    export default meffect;

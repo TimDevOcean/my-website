@@ -8,7 +8,7 @@ export default function Canvas() {
         <div className="content">
             <canvas></canvas>
         </div>
-        <script src="./meffect.js"></script>
+        <script type="" src="./meffect.js"></script>
     </div>
   )
 }

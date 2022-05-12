@@ -22,8 +22,6 @@ footer {
 }
 
 footer {
-  width: 85%;
-  position: fixed;
   min-height: 70px;
   border-top: solid #dddddd 1px;
   bottom: 0;
