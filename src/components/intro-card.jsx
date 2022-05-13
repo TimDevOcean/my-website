@@ -1,10 +1,11 @@
 import React from 'react';
 import slogos from '../img/stack-logos-color.png';
 import SocialIcons from './social-icons';
+import 'animate.css';
 
 export default function IntroCard(props) {
   return (
-    <div className='card card-grid-2'>
+    <div className='card card-grid-2 animate__fadeInUp'>
       <div className='grid-item'>
         <img className='card-pic' src={props.pic} alt=''/>
       </div>

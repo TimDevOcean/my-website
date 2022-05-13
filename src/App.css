@@ -59,7 +59,7 @@
 
 .intro-txt p {
   padding-right: 25px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .card {
@@ -107,16 +107,17 @@
 .project-card {
   line-height: 8px;
   width: 290px;
-  height: 270px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
 }
 
 .pc-content {
-  padding: 0 15px;
+  height: 120px;
+  padding: 20px;
 }
 
 .pc-content p {
+  line-height: 15px;
   font-size: 14px;
 }
 
@@ -125,18 +126,22 @@
   border-radius: 25px 25px 0 0;
 }
 
-.project-card button {
+.project-card a {
+  text-decoration: none;
   background-color: #fff;
   color: #303030;
   font-family: 'DM Sans', sans-serif;
   border: none;
   border-bottom: 1px solid #303030;
   padding: 5px 0;
+  font-size: 17px;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.project-card button:hover {
+.project-card a:hover {
   color: #000;
+  font-size: 16px;
   transform: scale(0.9);
   transition: 0.3s ease-in-out;
   cursor: pointer;

@@ -7,6 +7,8 @@ import Insights from './components/Insights';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Contact from './components/Contact';
+import Websites from './components/Websites';
+import NothingFound from './components/NothingFound';
 
 
 function App() {
@@ -14,11 +16,14 @@ function App() {
     <Router>
     <div className="App">
       <Header />
+      <div style={{height: "100px"}}></div>
       <div className='app-body'>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/websites" element={<Websites />} />
+          <Route path="/nothingfound" element={<NothingFound />} />
         </Routes>
       </div>
       <Footer />

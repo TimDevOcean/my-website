@@ -13,6 +13,7 @@ export default function Portfolio() {
           excerpt = {portfolioCat.excerpt}
           imgURL = {portfolioCat.imgURL}
           btn = {portfolioCat.btn}
+          btnText = "Discover More"
         />
     )
   }

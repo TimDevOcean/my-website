@@ -13,8 +13,8 @@ export default function Menu(props) {
   return (
     <div className={`menu ${props.visibility}`}>
         <Link to="/">Portfolio</Link>
-        <Link to="/insights">Insights</Link>
         <Link to="/contact">Contact</Link>
+        <Link to="/nothingfound">Insights</Link>
     </div>
   )
 }

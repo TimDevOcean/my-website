@@ -9,7 +9,7 @@ over 10 years experience. You're welcome
 to my personal website where I showcase all of
 my projects.
 Feel free to connect with me on
-the right. \n
+the right.
 Cheers!`;
 
 export default function IntroSection() {
@@ -19,7 +19,7 @@ export default function IntroSection() {
             <IntroTxt title="Hi there 👋🏾" content={content} />
         </div>
         <div className="grid-item">
-            <IntroCard name="Timothy Agozie" urole="Fullstack Web Developer" pic={pic} />
+            <IntroCard name="Timothy Agozie" urole="Full Stack Web Developer" pic={pic} />
         </div>
     </div>
   )
