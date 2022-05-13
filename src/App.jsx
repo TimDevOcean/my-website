@@ -16,7 +16,7 @@ function App() {
     <Router>
     <div className="App">
       <Header />
-      <div style={{height: "100px"}}></div>
+      <div className='spacer'></div>
       <div className='app-body'>
         <Routes>
           <Route path="/" element={<Home />} />

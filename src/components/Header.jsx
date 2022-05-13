@@ -23,7 +23,7 @@ export default function Header() {
           <div className="menu">
             {menuicon === 'opened' ? <Menu /> : <Menu visibility="hide" />}
           </div>
-          <Hamburger onToggle={toggled => {
+          <Hamburger size={48} onToggle={toggled => {
               if (toggled) {
                 handleMenuIcon('opened');
               } else {
