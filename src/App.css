@@ -76,7 +76,6 @@ footer .nav-grid {
 
 .intro-txt p {
   padding-right: 25px;
-  font-size: 18px;
 }
 
 .card {
@@ -135,9 +134,6 @@ footer .nav-grid {
   line-height: normal;
 }
 
-.pc-content p {
-  font-size: 14px;
-}
 
 .project-card img {
   width: 100%;
@@ -151,7 +147,7 @@ footer .nav-grid {
   font-family: 'DM Sans', sans-serif;
   border: none;
   border-bottom: 1px solid #303030;
-  padding: 25px 0;
+  padding: 20px 0;
   font-size: 17px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
