@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../img/logo.png";
 import { Slant as Hamburger } from 'hamburger-react';
 import Menu from "./Menu";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
 
@@ -13,9 +14,9 @@ export default function Header() {
 
   return (
     <header>
-      <div className="nav-grid body-content">
+      <div className="nav-grid app-body">
         <div className="nav-grid-item">
-          <img className='logo' src={logo} alt=""/>
+          <Link to="/"><img className='logo' src={logo} alt=""/></Link>
         </div>
 
         <div className="nav-grid-item nav">

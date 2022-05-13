@@ -6,11 +6,11 @@ import 'animate.css';
 export default function IntroCard(props) {
   return (
     <div className='card card-grid-2 animate__fadeInUp'>
-      <div className='grid-item'>
+      <div className='card-item'>
         <img className='card-pic' src={props.pic} alt=''/>
       </div>
 
-      <div className='grid-item'>
+      <div className='card-item'>
         <h3>{props.name}</h3>
         <p>{props.urole}</p>
         <img className='stack-logos' src={slogos} alt='' />

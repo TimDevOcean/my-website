@@ -1,5 +1,12 @@
 .app-body {
+  width: 90%;
   margin: auto;
+}
+
+@media (min-width: 1000px) {
+  .app-body {
+    width: 900px;
+  }
 }
 
 .logo {
@@ -17,8 +24,28 @@
 }
 
 .grid-2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  padding-top: 25px;
+}
+
+.grid-2 .grid-item {
+  display: block;
+  width: 100%;
+}
+
+
+@media (min-width: 1000px) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .grid-2 .grid-item:nth-of-type(1) {
+    order: 2;
+  }
+  .grid-2 .grid-item:nth-of-type(2) {
+    order: 1;
+  }
 }
 
 .nav-grid {
@@ -57,6 +84,15 @@
   opacity: 1;
 }
 
+@media (max-width: 800px) {
+  .menu {
+    background-color: #fff;
+    transition: 0.3s;
+    font-size: 20px;
+    padding: 5px 25px 5px 50px;
+  }
+}
+
 .intro-txt p {
   padding-right: 25px;
   font-size: 18px;
@@ -72,17 +108,17 @@
 .card-grid-2 {
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-gap: 10px
+  grid-gap: 10px;
 }
 
-.card .grid-item {
+.card .card-item {
   display: block;
   margin: auto 0;
 }
 
 .card-pic {
   display: block;
-  width: 75%;
+  width: 150px;
   margin: auto;
   border-radius: 50%;
   border: 4px solid #303030;
@@ -105,14 +141,16 @@
 }
 
 .project-card {
+  animation: fadeIn;
+  animation-duration: 1s;
   line-height: 8px;
-  width: 290px;
+  width: 100%;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+  padding-bottom: 20px;
 }
 
 .pc-content {
-  height: 120px;
   padding: 20px;
 }
 
@@ -122,7 +160,7 @@
 }
 
 .project-card img {
-  width: 290px;
+  width: 100%;
   border-radius: 25px 25px 0 0;
 }
 
@@ -149,8 +187,15 @@
 
 .component-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 15px;
+}
+
+@media (min-width: 800px) {
+  .component-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .stack-logos {

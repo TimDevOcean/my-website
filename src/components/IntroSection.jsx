@@ -16,10 +16,10 @@ export default function IntroSection() {
   return (
     <div className="grid-2 body-content">
         <div className="grid-item">
-            <IntroTxt title="Hi there 👋🏾" content={content} />
+            <IntroCard name="Timothy Agozie" urole="Full Stack Web Developer" pic={pic} />
         </div>
         <div className="grid-item">
-            <IntroCard name="Timothy Agozie" urole="Full Stack Web Developer" pic={pic} />
+            <IntroTxt title="Hi there 👋🏾" content={content} />
         </div>
     </div>
   )
