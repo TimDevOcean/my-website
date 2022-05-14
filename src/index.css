@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', Helvetica;
   height: 150px;
   border-bottom: solid #dddddd 1px;
   display: flex;
@@ -27,7 +27,7 @@ header {
 }
 
 footer {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Helvetica;
 }
 
 footer {
@@ -39,7 +39,7 @@ footer {
 
 span.f-txt {
   line-height: 70px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'DM Sans', Helvetica;
   font-size: 25px;
   color: #808080;
   padding-top: 40px;
@@ -50,26 +50,30 @@ hr {
 }
 
 h1 {
+  font-family: 'DM Sans', Helvetica;
+  font-weight: 500;
   animation: fadeInUp;
   animation-duration: 1s;
   line-height: 50px;
   font-size: 100px;
 }
 
-h1,h2,h3,h4 {
-  font-family: 'DM Sans', 'Poppins' sans-serif;
+h2,h3 {
+  font-family: 'DM Sans', helvetica;
+  font-weight: 400;
 }
 
 h5,h6,p,span {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Helvetica;
 }
 
 h3 {
-  font-weight: 400;
   font-size: 43px;
 }
 
 h4 {
+  font-family: 'DM Sans', Helvetica;
+  font-weight: 500;
   font-size: 30px;
 }
 
@@ -85,7 +89,7 @@ p, span {
   }
 
   h1,h2,h3,h4 {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', Helvetica;
   }
 
   h1 {
