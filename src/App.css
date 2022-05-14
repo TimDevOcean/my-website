@@ -134,6 +134,9 @@ footer .nav-grid {
   line-height: normal;
 }
 
+.pc-content h3 {
+  font-size: 50px;
+}
 
 .project-card img {
   width: 100%;
@@ -148,14 +151,14 @@ footer .nav-grid {
   border: none;
   border-bottom: 1px solid #303030;
   padding: 20px 0;
-  font-size: 17px;
+  font-size: 30px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
 .project-card a:hover {
   color: #000;
-  font-size: 16px;
+  font-size: 25px;
   transform: scale(0.9);
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -239,6 +242,7 @@ i:hover {
 
   .card {
     height: 250px;
+    border-radius: 25px;
   }
 
   .card p {
@@ -262,13 +266,30 @@ i:hover {
     padding: 5px;
   }
 
+  .project-card {
+    border-radius: 25px;
+  }
+
+  .project-card img {
+    border-radius: 25px 25px 0 0;
+  }
+
   .pc-content {
     padding: 0 20px 65px 20px;
     line-height: normal;
   }
 
+  .pc-content h3 {
+    font-size: 25px;
+  }
+
   .project-card a {
     padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .project-card a:hover {
+    font-size: 14px;
   }
 
   .component-grid {
