@@ -14,6 +14,7 @@ export default function Portfolio() {
           imgURL = {portfolioCat.imgURL}
           btn = {portfolioCat.btn}
           btnText = "Discover More"
+          pURL = {portfolioCat.pURL}
         />
     )
   }

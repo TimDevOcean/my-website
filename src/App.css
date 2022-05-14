@@ -75,7 +75,7 @@ footer .nav-grid {
 }
 
 .intro-txt p {
-  padding-right: 50px;
+  font-size: 50px;
 }
 
 .card {
@@ -143,22 +143,24 @@ footer .nav-grid {
   border-radius: 50px 50px 0 0;
 }
 
-.project-card a {
+.project-card a, button {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 300;
   text-decoration: none;
   background-color: #fff;
-  color: #303030;
+  color: #000000;
   font-family: 'DM Sans', sans-serif;
   border: none;
   border-bottom: 1px solid #303030;
-  padding: 20px 0;
-  font-size: 30px;
+  padding: 10px 0;
+  font-size: 20px;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.project-card a:hover {
+.project-card a:hover, button:hover {
   color: #000;
-  font-size: 25px;
+  font-size: 19px;
   transform: scale(0.9);
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -199,6 +201,22 @@ i:hover {
 .hamburger-react {
   width: 80px;
   height: 80px;
+}
+
+a.img-link {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.img-link:hover {
+  opacity: 0.85;
+}
+
+.project-card:hover {
+  transform: scale(0.99);
+  transition: 0.4s;
 }
 
 /* Media queries*/
@@ -283,13 +301,13 @@ i:hover {
     font-size: 25px;
   }
 
-  .project-card a {
+  .project-card a, button {
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 18px;
   }
 
-  .project-card a:hover {
-    font-size: 14px;
+  .project-card a:hover, button:hover {
+    font-size: 17px;
   }
 
   .component-grid {

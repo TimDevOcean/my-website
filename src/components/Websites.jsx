@@ -12,6 +12,7 @@ function createWebsite(website) {
           btn={website.btn}
           btnText = "Visit Site"
           target = {"_blank"}
+          pURL = {website.pURL}
         />
     )
   }
