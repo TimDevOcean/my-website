@@ -8,9 +8,7 @@ I'm a Full Stack Web developer / designer with
 over 10 years experience. You're welcome
 to my personal website where I showcase all of
 my projects.
-Feel free to connect with me on
-the right.
-Cheers!`;
+Feel free to get in touch!`;
 
 export default function IntroSection() {
   return (
