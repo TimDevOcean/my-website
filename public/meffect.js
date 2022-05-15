@@ -540,33 +540,31 @@ function hashCode(e) {
     for (let t = 0; t < e.length; t++) (r = (r << 5) - r + e.charCodeAt(t)), (r |= 0);
     return r;
 }
-$(window)
-    .on("mousedown", function (e) {
-        if (!Modernizr.touchevents && window.innerWidth > 1023)
-            switch (e.which) {
-                case 1:
-                    (timeoutId2 = setTimeout(myFunction2, 1e3)),
-                        $("#GeneralWrapper").is(".white") ||
-                            ((count2 = 0),
-                            (count3 = 0),
-                            (config.VELOCITY_DISSIPATION = 0),
-                            (config.SPLAT_RADIUS = 0),
-                            (timeoutload2 = setTimeout(function () {
-                                (count2 = 0),
-                                    (count3 = 0),
-                                    (timeout2 = setInterval(function () {
-                                        (count2 += 30), (config.SPLAT_RADIUS = count2);
-                                    }, 5)),
-                                    (timeout3 = setInterval(function () {
-                                        splatPointer2(pointers[0]), (count3 += 0.5), (config.VELOCITY_DISSIPATION = count3);
-                                    }, 20));
-                            }, 250)));
-            }
-    })
-    .on("mouseup", function () {
-        !Modernizr.touchevents &&
-            window.innerWidth > 1023 &&
-            (clearInterval(timeout2), clearInterval(timeout3), clearTimeout(timeoutload2), clearTimeout(timeoutId2), (count2 = 0), (count3 = 0), (config.VELOCITY_DISSIPATION = 0), (config.SPLAT_RADIUS = 2));
-    });
-
-    export default meffect;
+// $(window)
+//     .on("mousedown", function (e) {
+//         if (!Modernizr.touchevents && window.innerWidth > 1023)
+//             switch (e.which) {
+//                 case 1:
+//                     (timeoutId2 = setTimeout(myFunction2, 1e3)),
+//                         $("#GeneralWrapper").is(".white") ||
+//                             ((count2 = 0),
+//                             (count3 = 0),
+//                             (config.VELOCITY_DISSIPATION = 0),
+//                             (config.SPLAT_RADIUS = 0),
+//                             (timeoutload2 = setTimeout(function () {
+//                                 (count2 = 0),
+//                                     (count3 = 0),
+//                                     (timeout2 = setInterval(function () {
+//                                         (count2 += 30), (config.SPLAT_RADIUS = count2);
+//                                     }, 5)),
+//                                     (timeout3 = setInterval(function () {
+//                                         splatPointer2(pointers[0]), (count3 += 0.5), (config.VELOCITY_DISSIPATION = count3);
+//                                     }, 20));
+//                             }, 250)));
+//             }
+//     })
+//     .on("mouseup", function () {
+//         !Modernizr.touchevents &&
+//             window.innerWidth > 1023 &&
+//             (clearInterval(timeout2), clearInterval(timeout3), clearTimeout(timeoutload2), clearTimeout(timeoutId2), (count2 = 0), (count3 = 0), (config.VELOCITY_DISSIPATION = 0), (config.SPLAT_RADIUS = 2));
+//     });
