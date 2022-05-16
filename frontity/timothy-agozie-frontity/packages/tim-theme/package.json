@@ -1,0 +1,16 @@
+{
+  "name": "tim-theme",
+  "version": "1.0.0",
+  "description": "Frontity package created using the Frontity CLI.",
+  "keywords": [
+    "frontity",
+    "frontity-theme"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@typeform/embed-react": "^1.16.0",
+    "animate.css": "^4.1.1",
+    "frontity": "^1.17.2",
+    "hamburger-react": "^2.5.0"
+  }
+}
