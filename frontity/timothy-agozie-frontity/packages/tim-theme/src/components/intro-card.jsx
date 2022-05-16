@@ -6,7 +6,7 @@ import 'animate.css';
 
 export default function IntroCard(props) {
   return (
-    <div className='card card-grid-2 animate__fadeInUp'>
+    <div className='card card-grid-2'>
       <div className='card-item'>
         <img className='card-pic' src={props.pic} alt=''/>
       </div>

@@ -16,15 +16,15 @@ export default function Header() {
   return (
     <header>
       <div className="header-content">
-        <div className="">
+        <div className="grid-2-item">
           <FLink href="/"><img className='logo' src={logo} alt=""/></FLink>
         </div>
 
-        <div className="nav-menu">
+        <div className="nav-menu grid-2-item">
           <div className="menu">
             {menuicon === 'opened' ? <Menu /> : <Menu visibility="hide" />}
           </div>
-          <Hamburger size={48} onToggle={toggled => {
+          <Hamburger size={40} onToggle={toggled => {
               if (toggled) {
                 handleMenuIcon('opened');
               } else {
@@ -34,6 +34,7 @@ export default function Header() {
             } />
         </div>
       </div>
+      <div className="divider"></div>
     </header>
   )
 }
