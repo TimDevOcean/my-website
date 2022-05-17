@@ -1,4 +1,4 @@
-/*{
+{
     "version": 3,
     "builds": [
       {
@@ -6,4 +6,4 @@
         "use": "@frontity/now"
       }
     ]
-  } */
+  }
