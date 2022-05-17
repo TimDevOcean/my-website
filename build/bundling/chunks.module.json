@@ -1,18 +1,18 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "82cf9890f5c8047efac2",
+  "hash": "ce7a13abd2c45c40b69f",
   "publicPath": "",
   "outputPath": "/Users/TIM/Desktop/DEXTOP/CODE PROJECTS/timothy-agozie-website/build/static",
   "assetsByChunkName": {
     "timothy-agozie-frontity": [
       "timothy-agozie-frontity.module.js",
-      "timothy-agozie-frontity.ad390c264aea62b312c2.hot-update.js"
+      "timothy-agozie-frontity.6cb0741193556f657372.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "ad390c264aea62b312c2.hot-update.json",
+      "name": "6cb0741193556f657372.hot-update.json",
       "size": 65,
       "chunks": [],
       "chunkNames": [],
@@ -53,8 +53,8 @@
       "emitted": false
     },
     {
-      "name": "timothy-agozie-frontity.ad390c264aea62b312c2.hot-update.js",
-      "size": 22191,
+      "name": "timothy-agozie-frontity.6cb0741193556f657372.hot-update.js",
+      "size": 24138,
       "chunks": [
         "timothy-agozie-frontity"
       ],
@@ -69,7 +69,7 @@
     },
     {
       "name": "timothy-agozie-frontity.module.js",
-      "size": 7875925,
+      "size": 7877864,
       "chunks": [
         "timothy-agozie-frontity"
       ],
@@ -88,7 +88,7 @@
       ],
       "assets": [
         "timothy-agozie-frontity.module.js",
-        "timothy-agozie-frontity.ad390c264aea62b312c2.hot-update.js"
+        "timothy-agozie-frontity.6cb0741193556f657372.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -100,7 +100,7 @@
       "id": "timothy-agozie-frontity",
       "files": [
         "timothy-agozie-frontity.module.js",
-        "timothy-agozie-frontity.ad390c264aea62b312c2.hot-update.js"
+        "timothy-agozie-frontity.6cb0741193556f657372.hot-update.js"
       ]
     }
   ]

@@ -27,6 +27,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  overflow: hidden;
 }
 
 footer {
@@ -38,6 +39,13 @@ footer {
 footer span {
   font-family: 'DM Sans';
   font-size: 0.9rem;
+}
+
+main {
+  max-width: 1000px;
+  padding: 1.5em;
+  margin: auto;
+  overflow: hidden;
 }
 
 .divider {
@@ -62,7 +70,7 @@ footer span {
   width: 100%;
   transition: 0.3s;
   font-size: 1.2rem;
-  background-color: #fff;
+  background: #fff;
 }
 
 .menu a, button {
@@ -72,8 +80,9 @@ footer span {
   color: black;
   text-decoration: none;
   font-weight: 500;
-  padding: 0 15px;
-  opacity: 0.75;
+  padding:  15px;
+  opacity: 1;
+  background-color: #fff;
 }
 
 .menu a:hover {
@@ -145,7 +154,7 @@ p, span {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 35px;
   margin-bottom: 15px;
 }
@@ -255,7 +264,7 @@ p, span {
 
 .component-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   width: 100%;
   grid-gap: 15px;
 }
@@ -321,6 +330,52 @@ a.img-link:hover {
   line-height: 1.6;
   color: #303030;
 }
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+
+  .header-content, main {
+    padding: 1em;
+  }
+
+  .menu {
+    width: 75%;
+    font-size: 1.1rem;
+  }
+
+  .menu a {
+    padding: 10px;
+  }
+
+  .grid-2 .grid-item:nth-of-type(1) {
+    order: 2;
+  }
+  .grid-2 .grid-item:nth-of-type(2) {
+    order: 1;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .card-grid-2 {
+    grid-gap: 1px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card-pic {
+    width: 120px;
+  }
+}
+
+
+
 
 /* Media Queries
 

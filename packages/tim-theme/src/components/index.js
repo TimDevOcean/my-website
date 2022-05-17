@@ -44,7 +44,7 @@ const Root = ({ state, actions }) => {
         />
         <Header />
         <div className='spacer'></div>
-        <Main> 
+        <main> 
             {data.isFetching && <Loader />}
             {data.isArchive && state.router.link === "/" ? <Home /> : 
             data.isArchive && state.router.link !== "/" ? 
@@ -62,7 +62,7 @@ const Root = ({ state, actions }) => {
           <Canvas />  
           <script type="" src="https://tim.devoceangh.com/meffect.js"></script>
 
-        </Main> 
+        </main> 
         <Footer />
       </div>
     );
