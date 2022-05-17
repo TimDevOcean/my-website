@@ -19,4 +19,5 @@ export default connect(FLink);
 
 const Anchor = styled.a`
     text-decoration: none;
+    color: #000;
 `

@@ -7,8 +7,10 @@ import Pagination from "./list/pagination";
 const List = ({ state }) => {
 
     const data = state.source.get(state.router.link);
+    const id = data.id;
     return(
         <div>
+        <h1>{state.source.category[id].name}</h1>
             {data.items.map(item => {
                 const post = state.source.post[item.id];
                 return (
@@ -22,11 +24,11 @@ const List = ({ state }) => {
                                 <button href={post.link}>Read more <i className="zmdi zmdi-trending-flat animated infinite wobble"></i></button>
                             </div>
                         </Link>
-
-                        <Pagination />
                     </div>
                 )
             })}
+
+            <Pagination />
         </div>
     )
 

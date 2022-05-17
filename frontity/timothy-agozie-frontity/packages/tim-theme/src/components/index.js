@@ -1,6 +1,6 @@
 import React from "react";
 import { connect, Global, css, styled, Head } from 'frontity';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
 import List from "./list";
 import Post from "./post";
 import Page from "./page";
@@ -11,10 +11,18 @@ import Footer from "./Footer";
 import Websites from './Websites';
 import NothingFound from './NothingFound';
 import Contact from "./Contact";
+import Switch from "@frontity/components/switch";
+import Loading from "./loading";
+import Canvas from "./Canvas";
+import Loader from "./my-loader";
+
 
 const Root = ({ state, actions }) => {
 
     const data = state.source.get(state.router.link);
+    useEffect(() => {
+      actions.source.fetch("/websites");
+    }, [actions.source]);
 
     return (
       <div className="page">
@@ -30,28 +38,31 @@ const Root = ({ state, actions }) => {
         </Head>
 
 
+
         <Global 
             styles={Appstyles}
         />
         <Header />
         <div className='spacer'></div>
         <Main> 
-
+            {data.isFetching && <Loader />}
             {data.isArchive && state.router.link === "/" ? <Home /> : 
             data.isArchive && state.router.link !== "/" ? 
             <div className="component-grid"><List /></div> : null}
-            
-            {data.isPost && <Post />}
-            {data.isPage && <Page />}
-            {state.router.link === "/websites/" && <Websites />}
-            {state.router.link === "/contact/" && <Contact />}
-            {state.router.link === "/nothingfound/" && <NothingFound />}
+          
+            <Switch>
+              <Websites when={state.router.link === "/websites/"} />
+              <Contact when={state.router.link === "/contact/"} />
+              <Page when={data.isPage} />
+              <Post when={data.isPost} />
+              <NothingFound when={data.isError} />
+            </Switch>
 
             <div id="fb-root"></div>
-            
+          <Canvas />  
+          <script type="" src="https://tim.devoceangh.com/meffect.js"></script>
 
         </Main> 
-       
         <Footer />
       </div>
     );

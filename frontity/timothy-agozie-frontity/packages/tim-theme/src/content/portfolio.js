@@ -12,16 +12,16 @@ const portfolioCat = [
         title: "Web Apps",
         excerpt: "",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/websites.jpg",
-        btn: "/nothingfound",
-        pURL: "/nothingfound"
+        btn: "/web-apps",
+        pURL: "/web-apps"
     },
     {
         id: "c",
         title: "Mobile Apps",
         excerpt: "",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/mobile-apps.jpg",
-        btn: "/nothingfound",
-        pURL: "/nothingfound"
+        btn: "/mobile-apps",
+        pURL: "/mobile-apps"
     }
 ]
 
