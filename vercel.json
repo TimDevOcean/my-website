@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+{
+    "version": 3,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@frontity/now"
+      }
+    ]
+  }
+>>>>>>> 30f6f3c5bb2e4392526e153bb0f8f0fa48b8a6df
