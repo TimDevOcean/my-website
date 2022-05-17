@@ -11,11 +11,11 @@ import Footer from "./Footer";
 import Websites from './Websites';
 import NothingFound from './NothingFound';
 import Contact from "./Contact";
-import Item from "./list/list-item";
 
 const Root = ({ state, actions }) => {
 
     const data = state.source.get(state.router.link);
+
     return (
       <div className="page">
 
@@ -46,6 +46,9 @@ const Root = ({ state, actions }) => {
             {state.router.link === "/websites/" && <Websites />}
             {state.router.link === "/contact/" && <Contact />}
             {state.router.link === "/nothingfound/" && <NothingFound />}
+
+            <div id="fb-root"></div>
+            
 
         </Main> 
        

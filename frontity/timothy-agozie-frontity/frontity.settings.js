@@ -15,7 +15,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "http://timothy-agozie.local/"
+          "url": "https://tim.devoceangh.com"
         }
       }
     },

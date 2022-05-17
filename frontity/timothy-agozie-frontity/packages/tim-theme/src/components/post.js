@@ -15,12 +15,14 @@ const Post = ({ state }) => {
     const date = `${day} - ${month} - ${y}`;
 
     return (
-        <div>
+        <div className="insights-post">
             <FeaturedMedia id={post.featured_media} />
             <span>Author: {author.name}</span> &nbsp;|&nbsp; <span>{date}</span>
             <br />
             <h2 style={{margin:"10px 0 8px 0"}}>{post.title.rendered}</h2>
             <div dangerouslySetInnerHTML={{__html:post.content.rendered}}/>
+            <br />
+            <div className="fb-comments" data-href="https://tim.devoceangh.com/" data-width="100%" data-numposts="5"></div>
         </div>
     )
 
