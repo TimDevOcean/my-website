@@ -1,7 +1,7 @@
 {
   "errors": [],
   "warnings": [],
-  "hash": "c21b877b6c6683d132f1",
+  "hash": "4bd070d00d4c953e4ab4",
   "publicPath": "",
   "outputPath": "/Users/TIM/Desktop/DEXTOP/CODE PROJECTS/timothy-agozie-website/build/static",
   "assetsByChunkName": {
@@ -48,7 +48,7 @@
         "timothy-agozie-frontity"
       ],
       "info": {},
-      "emitted": false
+      "emitted": true
     }
   ],
   "filteredAssets": 0,
