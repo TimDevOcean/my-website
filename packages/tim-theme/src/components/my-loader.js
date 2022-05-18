@@ -16,7 +16,6 @@ const Loader = () => (
     width: 900px;
     height: 400px;
     position: absolute;
-    background: #fff;
     opacity: 0.5;
     z-index: 10;
   }  

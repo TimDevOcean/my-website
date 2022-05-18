@@ -7,17 +7,26 @@ import Page from "./page";
 import Header from "./Header";
 import Home from "./Home";
 import Appstyles from '../App.css';
+import Darkmode from '../Darkmode.css';
 import Footer from "./Footer";
 import Websites from './Websites';
 import NothingFound from './NothingFound';
 import Contact from "./Contact";
 import Switch from "@frontity/components/switch";
-import Loading from "./loading";
 import Canvas from "./Canvas";
 import Loader from "./my-loader";
 
 
+
 const Root = ({ state, actions }) => {
+
+    const { mode } = state.theme;
+    const { lightMode, darkMode } = actions.theme;
+
+    const handleDark = () => {
+      darkMode();
+      console.log(mode);
+    }
 
     const data = state.source.get(state.router.link);
     useEffect(() => {
@@ -38,13 +47,19 @@ const Root = ({ state, actions }) => {
         </Head>
 
 
-
-        <Global 
-            styles={Appstyles}
-        />
+        { mode === 'dark' ?
+        <Global styles={Darkmode} /> :
+        <Global styles={Appstyles} /> 
+        }
         <Header />
         <div className='spacer'></div>
         <main> 
+            <ModeToggle>
+              <span>MODE</span>&nbsp;&nbsp;
+              <button className="light-mode-btn" onClick={lightMode}></button>
+              <button className="dark-mode-btn" onClick={darkMode}></button>
+            </ModeToggle>
+
             {data.isFetching && <Loader />}
             {data.isArchive && state.router.link === "/" ? <Home /> : 
             data.isArchive && state.router.link !== "/" ? 
@@ -72,8 +87,32 @@ const Root = ({ state, actions }) => {
 
  
 
-  const Main = styled.div`
-    max-width: 1000px;
-    padding: 1.5em;
-    margin: auto;
+  const ModeToggle = styled.div`
+    display: flex;
+    padding: 0 0 1rem 0;
+    align-items: center;
+    justify-content: right;
+    font-family: 'DM Sans', helvetica;
+    & button {
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      border: 1px solid #f3f3f3;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      cursor: pointer;
+    }
+    & button.light-mode-btn {
+      border-radius: 50% 0 0 50%;
+      background: #fff;
+    }
+    & button.dark-mode-btn {
+      border-radius: 0 50% 50% 0;
+      background: #000;
+    }
+    & span {
+      font-family: 'Poppins', helvetica;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 10px;
+    }
   `
