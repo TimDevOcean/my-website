@@ -432,3 +432,25 @@ canvas {
   z-index: -1;
   opacity: 0.2;
 }
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #101010; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000; 
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #202020; 
+  transition: 0.8s ease-in-out;
+}

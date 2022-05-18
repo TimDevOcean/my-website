@@ -418,3 +418,26 @@ canvas {
   filter: invert(100%);
   opacity: 0.2;
 }
+
+
+/* scrollbar width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddddd; 
+  transition: 0.3s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #808080; 
+  transition: 0.8s ease-in-out;
+}

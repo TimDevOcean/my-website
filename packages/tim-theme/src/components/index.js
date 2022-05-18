@@ -109,6 +109,9 @@ const Root = ({ state, actions }) => {
       border-radius: 0 50% 50% 0;
       background: #000;
     }
+    & button:hover {
+      border: 1px solid cyan !important;
+    }
     & span {
       font-family: 'Poppins', helvetica;
       font-weight: 400;
