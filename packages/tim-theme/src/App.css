@@ -27,7 +27,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  overflow: hidden;
 }
 
 footer {
@@ -45,7 +44,6 @@ main {
   max-width: 1000px;
   padding: 1.5em;
   margin: auto;
-  overflow: hidden;
 }
 
 .divider {
@@ -239,7 +237,7 @@ p, span {
   font-family: 'Poppins', Helvetica;
   font-weight: 300;
   text-decoration: none;
-  background-color: none;
+  background: none;
   color: #000000;
   font-family: 'DM Sans', sans-serif;
   border: none;
