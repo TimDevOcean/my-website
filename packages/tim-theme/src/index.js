@@ -10,7 +10,8 @@ export default {
   },
   state: {
     theme: {
-      isMenuOpen: true
+      isMenuOpen: true,
+      mode: 'dark'
     }
   },
   actions: {
@@ -25,6 +26,12 @@ export default {
         observe(() => {
           console.log(state.router.link);
         })
+      },
+      lightMode: ({state}) => {
+        state.theme.mode = 'light';
+      },
+      darkMode: ({state}) => {
+        state.theme.mode = 'dark';
       }
     }
   }

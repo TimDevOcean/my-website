@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Autograf;
+  src: url(https://tim.devoceangh.com/wp-content/uploads/2022/05/Autograf.ttf);
+}
+
+
 * {
   padding: 0;
   margin: 0;
@@ -54,7 +60,8 @@ main {
 }
 
 .logo {
-  width: 200px;
+  font-family: 'Autograf';
+  font-size: 2rem;
 }
 
 .nav-menu {
@@ -339,6 +346,10 @@ a.img-link:hover {
     padding: 1em;
   }
 
+  .logo {
+    font-size: 1.3rem;
+  }
+
   .menu {
     width: 75%;
     font-size: 1.1rem;
@@ -375,136 +386,6 @@ a.img-link:hover {
 
 
 
-/* Media Queries
-
-@media only screen and (min-width: 1000px) {
-
-  header, footer {
-    height: 80px;
-  }
-
-  h1,h2,h3,h4 {
-    font-family: 'DM Sans', Helvetica;
-  }
-
-  h1 {
-    font-size: 65px;
-  }
-
-  p, span {
-    font-size: 18px;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-
-  h4 {
-    font-size: 22px;
-  }
-  
-
-  span.f-txt {
-    font-size: 14px;
-    padding-top: 0;
-    line-height: 80px;
-  }
-
-  .menu {
-    font-size: 18px;
-    padding: 0;
-  }
-
-  .spacer {
-    height: 35px;
-  }
-
-  .app-body {
-    width: 900px;
-  }
-
-  .logo {
-    width: 200px;
-  }
-
-  .grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-  }
-
-  .grid-2 .grid-item:nth-of-type(1) {
-    order: 2;
-  }
-  .grid-2 .grid-item:nth-of-type(2) {
-    order: 1;
-  }
-
-  .intro-txt p {
-    padding-right: 25px;
-    font-size: 20px;
-  }
-
-  .card {
-    height: 225px;
-    border-radius: 25px;
-    padding: 15px;
-  }
-
-  .card p {
-    font-size: 15px;
-  }
-
-  .card-grid-2 {
-    grid-template-columns: 45% 55%;
-  }
-
-  .card-pic {
-    width: 150px
-  }
-
-  .stack-logos {
-    width: 160px;
-  }
-
-  .social-icons i {
-    font-size: 20px;
-    padding: 5px;
-  }
-
-  .project-card {
-    border-radius: 25px;
-  }
-
-  .project-card img {
-    border-radius: 25px 25px 0 0;
-  }
-
-  .pc-content {
-    padding: 0 20px 65px 20px;
-  }
-
-  .pc-content h3 {
-    font-size: 25px;
-  }
-
-  .project-card a, button {
-    padding: 10px 0;
-    font-size: 18px;
-  }
-
-  .project-card a:hover, button:hover {
-    font-size: 17px;
-  }
-
-  .component-grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-}
-*/
 /* Mouse Over Effect */
 .header-anim {
   z-index: 0;
@@ -536,5 +417,4 @@ canvas {
   -webkit-filter: invert(100%);
   filter: invert(100%);
   opacity: 0.2;
-}
 }

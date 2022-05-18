@@ -1,0 +1,434 @@
+@font-face {
+  font-family: Autograf;
+  src: url(https://tim.devoceangh.com/wp-content/uploads/2022/05/Autograf.ttf);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #dddddd;
+}
+
+h1,h2,h3,h4,h5,h6, .logo {
+  color: #fff !important;
+}
+
+html {
+  font-family: 'Poppins', helvetica;
+  background: #121212;
+}
+
+header, footer {
+  background: #101010 !important;
+  font-family: 'DM Sans', Helvetica;
+}
+
+button, a {
+  color: #fff !important;
+  border-color: #808080 !important;
+}
+
+.card, .project-card {
+  border: 1px solid #303030;
+}
+
+header {
+  z-index: 100;
+  background: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+.header-content {
+  height: 5em;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer {
+  color: #808080;
+  bottom: 0;
+  margin-top: 50px;
+}
+
+footer span {
+  font-family: 'DM Sans';
+  font-size: 0.9rem;
+}
+
+main {
+  max-width: 1000px;
+  padding: 1.5em;
+  margin: auto;
+}
+
+.divider {
+  height: 1px;
+  width: 95%;
+  margin: auto;
+  background-color: #303030;
+}
+
+.logo {
+  font-family: 'Autograf';
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  background: #101010;
+}
+
+.menu a, button {
+  font-family: 'DM Sans';
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding:  15px;
+  opacity: 1;
+  background-color: #101010;
+}
+
+.menu a:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu a:active {
+  opacity: 1;
+}
+
+.grid-2-item {
+  width: 50%;
+}
+
+hr {
+  border-top: 1px solid #bababa;
+}
+
+h1 {
+  font-family: 'DM Sans', Helvetica;
+  font-weight: 500;
+  animation: fadeInUp;
+  animation-duration: 0.8s;
+  font-size: 4rem;
+  line-height: 1.8em;
+}
+
+h2,h3,h4,h5,h6 {
+  font-family: 'DM Sans', helvetica;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-family: 'DM Sans', Helvetica;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+p, span {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 200;
+  font-size: 15px;
+}
+
+.app-body {
+  width: 90%;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+  transition: 3s;
+}
+
+.show {
+  transition: 3s;
+  display: block;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 35px;
+  margin-bottom: 15px;
+}
+
+.intro-txt h4 {
+  font-size: 22px;
+  line-height: 2.5em;
+}
+
+.intro-txt p {
+  font-size: 22px;
+}
+
+.card {
+  width: auto;
+  min-height: 250px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px, rgba(0, 0, 0, 0.3) 0px 8px 24px, rgba(0, 0, 0, 0.3) 0px 16px 48px;
+}
+
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-gap: 10px;
+}
+
+.card .card-item {
+  display: block;
+  margin: auto 0;
+}
+
+.card-pic {
+  display: block;
+  width: 10rem;
+  margin: auto;
+  border-radius: 50%;
+  border: 4px solid #808080;
+}
+
+.card h3 {
+  text-align: left;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.card hr {
+  border-top: 1px solid #bababa;
+  width: 80%;
+  float: left;
+  clear: both;
+}
+
+.project-card {
+  animation: fadeIn;
+  animation-duration: 1s;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 4px 12px;;
+}
+
+.pc-content {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.pc-content h3 {
+  font-size: 1.4rem;
+}
+
+.pc-content p {
+  font-size: 1rem;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.project-card button {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 300;
+  text-decoration: none;
+  background: none;
+  color: #000000;
+  font-family: 'DM Sans', sans-serif;
+  border: none;
+  border-bottom: 1px solid #303030;
+  padding: 10px 0;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-card button:hover {
+  color: #000;
+  font-size: 0.98rem;
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project-card a {
+  color: #000;
+}
+
+.component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  width: 100%;
+  grid-gap: 15px;
+}
+
+.stack-logos {
+  width: 150px;
+  padding: 10px 0;
+  border-bottom: 1px solid #b9b9b9;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+img.stack-logos:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.social-icons i {
+  padding: 5px;
+  color: #dddddd;
+  transition: transform 0.3s;
+  font-size: 18px;
+}
+
+i:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+a.img-link {
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.img-link:hover {
+  opacity: 0.85;
+}
+
+.project-card:hover {
+  transform: scale(0.99);
+  transition: 0.4s;
+}
+
+.insights-post h2 {
+  font-family: 'DM Sans', 'Poppins', Helvetica;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+
+.insights-post .pheading {
+  font-family: 'DM Sans', 'Poppins', Helvetica;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.insights-post p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+
+  .header-content, main {
+    padding: 1em;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .menu {
+    width: 75%;
+    font-size: 1.1rem;
+  }
+
+  .menu a {
+    padding: 10px;
+  }
+
+  .grid-2 .grid-item:nth-of-type(1) {
+    order: 2;
+  }
+  .grid-2 .grid-item:nth-of-type(2) {
+    order: 1;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .card-grid-2 {
+    grid-gap: 1px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+
+  .card-pic {
+    width: 120px;
+  }
+}
+
+
+
+
+/* Mouse Over Effect */
+.header-anim {
+  z-index: 0;
+}
+.header-anim canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 1023.98px) {
+  .header-anim canvas {
+      height: 100% !important;
+  }
+}
+.header-anim .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #232428;
+  pointer-events: none;
+}
+
+canvas {
+  z-index: -1;
+  opacity: 0.2;
+}

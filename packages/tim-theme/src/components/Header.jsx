@@ -17,7 +17,7 @@ export default function Header() {
     <header>
       <div className="header-content">
         <div className="grid-2-item">
-          <FLink href="/"><img className='logo' src={logo} alt=""/></FLink>
+          <FLink href="/"><span className='logo'>Timothy Agozie</span></FLink>
         </div>
 
         <div className="nav-menu grid-2-item">
