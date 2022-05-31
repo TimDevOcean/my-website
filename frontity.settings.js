@@ -12,6 +12,14 @@ const settings = {
       "name": "tim-theme"
     },
     {
+      name: "@frontity/google-tag-manager-analytics",
+      state: {
+        googleTagManagerAnalytics: {
+          containerId: "GTM-MJNTDG5",
+        },
+      },
+    },
+    {
       "name": "@frontity/wp-source",
       "state": {
         "source": {

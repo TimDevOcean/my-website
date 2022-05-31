@@ -17,6 +17,14 @@ const website = [
     },
     {
         id: 3,
+        title: "Octane DC",
+        excerpt: "A licensed fund management company.",
+        imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/odc.jpg",
+        btn: "https://octanedc.com/",
+        pURL: "https://octanedc.com/"
+    },
+    {
+        id: 4,
         title: "CQ Legal",
         excerpt: "A law firm that serves a broad range of clients.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/cq.jpg",
@@ -24,7 +32,7 @@ const website = [
         pURL: "https://www.cqlegal.net/"
     },
     {
-        id: 4,
+        id: 5,
         title: "KasaRock",
         excerpt: "A record label owned by musician Reggie Rockstone.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/kasarock.jpg",
@@ -32,7 +40,7 @@ const website = [
         pURL: "https://kasarock.com/"
     },
     {
-        id: 5,
+        id: 6,
         title: "Victrices",
         excerpt: "A community dedicated to empowering women.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/victrices.jpg",
@@ -40,7 +48,7 @@ const website = [
         pURL: "https://victrices.com/"
     },
     {
-        id: 6,
+        id: 7,
         title: "Detty K",
         excerpt: "An Ivorian Hiphop / Afrobeats artist.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/dettyk.jpg",
