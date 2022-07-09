@@ -11,7 +11,7 @@ export default {
   state: {
     theme: {
       isMenuOpen: true,
-      mode: 'light'
+      mode: 'dark'
     }
   },
   actions: {

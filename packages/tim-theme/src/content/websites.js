@@ -9,6 +9,22 @@ const website = [
     },
     {
         id: 2,
+        title: "Yancy Capital",
+        excerpt: "A sustainable real estate development company.",
+        imgURL: "https://devoceangh.com/wp-content/uploads/2022/07/yc.jpg",
+        btn: "https://yancycapital.com/",
+        pURL: "https://yancycapital.com/"
+    },
+    {
+        id: 3,
+        title: "Aurora Parfums",
+        excerpt: "An e-commerce website for a cosmetics company.",
+        imgURL: "https://devoceangh.com/wp-content/uploads/2022/07/ap.jpg",
+        btn: "https://gh.auroraparfums.com/",
+        pURL: "https://gh.auroraparfums.com/"
+    },
+    {
+        id: 4,
         title: "Africa 1 Media",
         excerpt: "A media company with focus on entertainment.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/a1m.jpg",
@@ -16,7 +32,7 @@ const website = [
         pURL: "https://africa1media.com/"
     },
     {
-        id: 3,
+        id: 5,
         title: "Octane DC",
         excerpt: "A licensed fund management company.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/odc.jpg",
@@ -24,7 +40,7 @@ const website = [
         pURL: "https://octanedc.com/"
     },
     {
-        id: 4,
+        id: 6,
         title: "CQ Legal",
         excerpt: "A law firm that serves a broad range of clients.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/cq.jpg",
@@ -32,7 +48,7 @@ const website = [
         pURL: "https://www.cqlegal.net/"
     },
     {
-        id: 5,
+        id: 7,
         title: "KasaRock",
         excerpt: "A record label owned by musician Reggie Rockstone.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/kasarock.jpg",
@@ -40,7 +56,7 @@ const website = [
         pURL: "https://kasarock.com/"
     },
     {
-        id: 6,
+        id: 8,
         title: "Victrices",
         excerpt: "A community dedicated to empowering women.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/victrices.jpg",
@@ -48,7 +64,7 @@ const website = [
         pURL: "https://victrices.com/"
     },
     {
-        id: 7,
+        id: 9,
         title: "Detty K",
         excerpt: "An Ivorian Hiphop / Afrobeats artist.",
         imgURL: "https://devoceangh.com/wp-content/uploads/2022/05/dettyk.jpg",
