@@ -436,7 +436,7 @@ canvas {
   transition: 0.3s;
 }
 
-/* Handle on hover styling.. */
+/* Handle on hover styling... */
 ::-webkit-scrollbar-thumb:hover {
   background: #808080;
   transition: 0.8s ease-in-out;
