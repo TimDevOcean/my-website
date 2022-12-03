@@ -9,8 +9,9 @@ const List = ({ state }) => {
     const data = state.source.get(state.router.link);
     const id = data.id;
     return(
-        <div>
+        <div className='insights'>
         <h1>{state.source.category[id].name}</h1>
+        <div className='component-grid'>
             {data.items.map(item => {
                 const post = state.source.post[item.id];
                 return (
@@ -27,7 +28,7 @@ const List = ({ state }) => {
                     </div>
                 )
             })}
-
+            </div>
             <Pagination />
         </div>
     )

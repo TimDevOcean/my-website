@@ -333,6 +333,10 @@ a.img-link:hover {
   transition: 0.4s;
 }
 
+.insights {
+  width: 1000px;
+}
+
 .insights-post h2 {
   font-family: 'DM Sans', 'Poppins', Helvetica;
   font-size: 2.8rem;
